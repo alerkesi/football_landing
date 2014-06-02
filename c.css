@@ -1,0 +1,288 @@
+.a-football * {
+    margin: 0;
+    padding: 0;
+}
+.a-football {
+    color: #333;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+}
+
+.a-football .a_container {
+    min-width: 960px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.a-football .a_content {
+    padding: 5px 10px;
+    box-sizing: border-box;
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+.a-football a {
+    color: inherit;
+    text-decoration: none;
+}
+.a-football .rel {
+    position: relative;
+}
+
+.a-football .underline-link:hover,
+.a-football .dotted-link:hover {
+    border-bottom: 1px solid transparent !important;
+}
+
+.a-football .main-bg {
+    display: block;
+    height: 671px;
+    background: url("src/main.jpg") no-repeat center;
+    position: relative;
+}
+.a-football .sp.navy-arrow {
+    width: 18px;
+    height: 7px;
+    background-position: 0 -100px;
+}
+.a-football .sp.navy-home {
+    width: 11px;
+    height: 10px;
+    background-position: -21px -100px;
+}
+.a-football .page-content {
+    width: 80%;
+    width: calc(100% - 200px);
+}
+.a-football .sales-content {
+    width: 100%;
+}
+.a-football .hidden {
+    display: none;
+}
+.a-football .sales-active li,
+.a-football .sales-finished li {
+    float: left;
+    display: block;
+    width: 49%;
+    width: calc(100% / 2 - 10px);
+    margin-bottom: 20px;
+}
+.a-football .sales-active li:nth-child(2n),
+.a-football .sales-finished li:nth-child(2n) {
+    margin-left: 2%;
+    margin-left: calc(20px);
+}
+.a-football .sales-active a,
+.a-football .sales-finished a {
+    display: block;
+    height: 144px;
+    background: no-repeat center;
+    border-radius: 6px;
+    max-width: 444px;
+}
+.a-football .sales-label {
+    position: absolute;
+    top: 65%;
+    left: 0;
+    padding: 0 10px;
+    line-height: 20px;
+    height: 20px;
+    display: inline-block;
+    border-radius: 0 10px 10px 0;
+    font-size: 13px;
+}
+.a-football .sales-label.active {
+    background-color: #ffc302;
+}
+.a-football .sales-label.finished {
+    background-color: #ccc;
+}
+.a-football .sales-label.cont {
+    background-color: #9c0;
+}
+.a-football .sales-list li {
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+.a-football .sales-list span.link {
+    font-size: 16px;
+}
+.a-football .sales-list span {
+    font-size: 14px;
+}
+.a-football .sales-list .border {
+    display: inline-block;
+    width: 2px;
+    height: 20px;
+    vertical-align: middle;
+    margin: 0 5px;
+}
+.a-football .sales-list li.active .border {
+    background-color: #ffc302;
+}
+.a-football .sales-list li.finished .border {
+    background-color: #ccc;
+}
+.a-football .sales-list li.cont .border {
+    background-color: #9c0;
+}
+.a-football .bottom-shadow:before,
+.a-football .bottom-shadow:after {
+    background-image: url("src/sprite.png");
+}
+.a-football .bottom-shadow:before,
+.a-football .bottom-shadow:after {
+    position: absolute;
+    height: 11px;
+    bottom: -11px;
+    background-position: 0 -500px;
+    content: "";
+}
+.a-football .bottom-shadow:before,
+.a-football .top-shadow:before {
+    left: 0;
+    right: 45px;
+}
+.a-football .bottom-shadow:after,
+.a-football .top-shadow:after {
+    width: 45px;
+    right: 0;
+    background-position: -1955px -500px;
+}
+.a-football .link {
+    cursor: pointer;
+    color: #333;
+}
+.a-football .underline-link {
+    text-decoration: none;
+    border-bottom: 1px solid;
+    cursor: pointer;
+}
+.a-football .underline-link.fever-line:hover {
+    border-bottom-style: solid;
+}
+.a-football .dotted-link,
+.a-football .noline-link {
+    text-decoration: none;
+    border-bottom-width: 1px;
+}
+.a-football .dotted-link {
+    color: inherit;
+    border-bottom-style: dotted;
+    cursor: pointer;
+}
+.a-football .bl {
+    color: #39c;
+}
+.a-football .bl-hover:hover {
+    color: #39c;
+}
+.a-football .bl-hover:hover {
+    color: #39c;
+}
+
+.a-football .noline-link:hover {
+    text-decoration: underline;
+}
+.a-football .dotted-link.bl:hover {
+    border-bottom-style: none;
+}
+.a-football .bl:hover {
+    color: #39c;
+}
+.a-football .flt-r {
+    float: right;
+}
+.a-football .flt-l {
+    float: left;
+}
+.a-football ul.list-none {
+    list-style: none;
+}
+.a-football .clearfix:after {
+    content: '.';
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.main-sticker {
+    font-size: 18px;
+    font-style: italic;
+    position: absolute;
+
+}
+.sticker-stad {
+    top: 10%;
+    left: 60%;
+}
+.sticker-hifi {
+    top: 40%;
+    left: 55%;
+}
+
+.f-head {
+    margin: 40px 0 25px;
+    font-size: 44px;
+    text-align: center;
+}
+.f-size {
+    font-size: 0;
+    text-align: center;
+}
+.f-size span, .f-size li {
+    font-size: 24px;
+    display: inline-block;
+    margin-right: 12px;
+}
+.f-size li {
+    width: 48px;
+    height: 48px;
+    line-height: 46px;
+    -webkit-border-radius: 24px;
+    -moz-border-radius: 24px;
+    border-radius: 24px;
+    background-color: #fff;
+    border: solid 2px #ffc302;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.size-area {
+    display: none;
+}
+.button {
+    padding: 0 10px;
+    height: 48px;
+    line-height: 48px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    border: 1px solid;
+    font-size: 27px;
+    cursor: pointer;
+    margin-left: 6px;
+    outline: none;
+}
+
+.button-gold {
+    background-color: #ffc302;
+    border-color: #efb700;
+    text-shadow: 0 1px rgba(255, 255, 255, .4);
+    color: #000;
+    margin-left: 14px;
+}
+
+.button-gold:hover {
+    background-color: #ffd10a;
+}
+.button-gold:active {
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .2);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .2);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
