@@ -9,6 +9,7 @@
     color: #333;
     font-family: 'PT Sans', sans-serif;
     font-weight: 400;
+    font-size: 16px;
 }
 .a-football a {
     cursor: default;
@@ -34,8 +35,7 @@
     position: relative;
 }
 
-.a-football .underline-link:hover,
-.a-football .dotted-link:hover {
+.a-football .noline-hover:hover {
     border-bottom: 1px solid transparent !important;
 }
 
@@ -198,6 +198,15 @@
     color: #39c;
 }
 
+.a-football .green-hover:hover {
+    color: #093;
+}
+
+.a-football .line-gold-hover:hover {
+    border-color: #ffc302;
+}
+
+
 .a-football .noline-link:hover {
     text-decoration: underline;
 }
@@ -225,37 +234,41 @@
     height: 0;
 }
 
-.main-sticker {
+.a-football .main-sticker {
     font-size: 18px;
     font-style: italic;
     position: absolute;
 
 }
-.sticker-stad {
+.a-football .sticker-stad {
     top: 10%;
     left: 60%;
 }
-.sticker-hifi {
+.a-football .sticker-hifi {
     top: 40%;
     left: 55%;
 }
 
-.f-head {
+hr.sinus {
+    margin: 10px 0;
+}
+
+.a-football .f-head {
     margin: 40px 0 25px;
     font-size: 44px;
     text-align: center;
 }
-.f-size {
+.a-football .f-size {
     font-size: 0;
     text-align: center;
     margin-bottom: 40px;
 }
-.f-size span, .f-size li {
+.a-football .f-size span, .a-football .f-size li {
     font-size: 24px;
     display: inline-block;
     margin-right: 12px;
 }
-.f-size li {
+.a-football .f-size li {
     width: 48px;
     height: 48px;
     line-height: 46px;
@@ -270,10 +283,13 @@
     box-sizing: border-box;
     cursor: pointer;
 }
-.size-area {
+.a-football .f-size li.selected {
+    background-color: #ffc302;
+}
+.a-football .size-area {
     display: none;
 }
-.button {
+.a-football .button {
     padding: 0 10px;
     height: 48px;
     line-height: 48px;
@@ -283,58 +299,58 @@
     border: 1px solid;
     font-size: 27px;
     cursor: pointer;
-    margin-left: 6px;
     outline: none;
-    cursor: pointer;
+    display: inline-block;
 }
 
-.button-gold {
+.a-football .button-gold {
     background-color: #ffc302;
     border-color: #efb700;
     text-shadow: 0 1px rgba(255, 255, 255, .4);
     color: #000;
 }
-.button-sm {
+.a-football .button-sm {
     height: 24px!important;
     line-height: 24px!important;
     border-radius: 4px!important;
 }
 
-.button-gold:hover {
+.a-football .button-gold:hover {
     background-color: #ffd10a;
 }
-.button-gold:active {
+.a-football .button-gold:active {
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .2);
     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .2);
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2);
 }
-.add-item {
+
+.a-football .add-item {
     display: block;
     float: left;
     position: relative;
     text-align: center;
     padding-top: 20px;
-    width: 30%;
-    width: calc(100% / 3 - 80px);
+    /*width: 30%;*/
+    /*width: calc((100% - 80px) / 3);*/
+    width: 285px;
     overflow: hidden;
 }
 
-.add-item:not(:last-child){
+.a-football .add-item:not(:last-child){
     margin-right: 4%;
-    margin-right: calc(40px);
+    margin-right: calc((100% - 3 * 285px) / 2);
 }
-.add-item-blind {
+.a-football .add-item-blind {
     position: absolute;
-    right: 0;
+    left: 57%;
     top: 0;
     text-align: right;
-    padding: 0 8px 0 25px;
-
-    width: 40%;
+    padding: 0 5px 0 20px;
+    width: 43%;
     height: 195px;
 }
 
-.add-item-blind-bg {
+.a-football .add-item-blind-bg {
     display: block;
     position: absolute;
     top: 0;
@@ -351,10 +367,10 @@
     -ms-transition: left .1s linear;
     transition: left .1s linear;
 }
-.add-item-blind:hover .add-item-blind-bg {
+.a-football .add-item-blind:hover .add-item-blind-bg {
     left: 10px;
 }
-.add-item-blind-label {
+.a-football .add-item-blind-label {
     top: 50%;
     -webkit-transform: translate(0, -50%);
     -moz-transform: translate(0, -50%);
@@ -365,44 +381,156 @@
     z-index: 2;
     position: relative;
 }
-.add-item img {
+.a-football .add-item img {
     margin-bottom: 10px;
 }
-.add-item-desc {
+.a-football .add-item-desc {
     font-size: 16px;
-
-}
-.add-item-price {
     margin-bottom: 15px;
 }
-.add-item-model {
+.a-football .add-item-price {
+
+}
+.a-football .add-item .button.button-sm {
+    font-size: 13px!important;
+
+}
+.a-football .add-item-model {
     font-weight: bold;
 }
-.item-fline {
+.a-football .item-badge {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    font-size: 44px;
+    text-align: center;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    border-radius: 40px;
+    background-color: #ffc302;
+    color: #ffffff;
+}
+@media screen and (max-width: 1100px) {
+    .a-football .item-badge{
+        -webkit-transform: translate(-20%, 0);
+        -moz-transform: translate(-20%, 0);
+        -ms-transform: translate(-20%, 0);
+        -o-transform: translate(-20%, 0);
+        transform: translate(-20%, 0);
+        top: -30px;
+        left: 0;
+    }
+    .a-football .item-pic {
+        margin-left: 0;
+    }
+}
+@media screen and (min-width: 1101px) and (max-width: 1200px) {
+    .a-football .item-badge {
+        top: 0;
+        left: 0;
+    }
+    .a-football .item-pic {
+        margin-left: 100px;
+    }
+}
+@media screen and (min-width: 1201px) {
+    .a-football .item-pic {
+        margin-left: 140px;
+    }
+    .a-football .item-badge {
+        top: 0;
+        left: 0;
+    }
+}
+.a-football .item-fline {
     margin-bottom: 10px;
 }
-.item-sline {
+.a-football .item-sline {
     padding-bottom: 20px;
 }
-.item-desc {
+.a-football .item-desc {
     width: 65%;
     width: calc(100% - 320px);
 }
-.item-view {
+.a-football .item-view {
     width: 33%;
     width: calc(320px);
     bottom: 20px;
     right: 0;
     position: absolute;
 }
-.item-card {
+.a-football .item-card {
     text-align: center;
-    width: 33%;
-    width: calc(350px);
+    width: 30%;
+    width: calc(290px);
     margin-left: 1%;
     margin-left: calc(20px);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    border: solid 1px #ffc302;
+    padding: 30px 25px;
 }
-.item-pic {
-    width: 66%;
-    width: calc(100% - 370px);
+.a-football .item-pic {
+    /*width: 66%;*/
+    /*width: calc(100% - 370px);*/
+    max-width: 615px;
+    margin-top: 10px;
+}
+
+.a-football .item-desc__head-little, .a-football .card-price {
+    font-weight: bold;
+}
+
+.a-football .item-desc__head {
+    font-size: 24px;
+}
+.a-football .item-desc__article, .a-football .item-desc__head-little {
+    font-size: 16px;
+}
+.a-football .card-model {
+    font-size: 24px;
+    border-bottom: 1px solid #ffc302;
+}
+.a-football .item-card:hover .card-model, .a-football .card__in-present {
+    color: #093;
+}
+.a-football .card-plus {
+    width: 4px;
+    height: 16px;
+    background-color: #ffc302;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    margin: 3px 0 5px;
+}
+.a-football .card-plus:before {
+    position: absolute;
+    height: 4px;
+    width: 16px;
+    left: -6px;
+    top: 6px;
+    content: "";
+    background-color: #ffc302;
+}
+.a-football .card-price {
+    font-size: 24px;
+    font-weight: bold;
+}
+.a-football .card__in-present {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.a-football .card__present-model {
+    font-size: 24px;
+}
+.a-football .card-model, .a-football .card__present-model {
+    margin-bottom: 15px;
 }
