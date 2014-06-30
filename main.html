@@ -14,36 +14,39 @@
 <body>
 <div class="a-football">
     <div class="a_container">
-        <div class="a_content clearfix">
-            <div class="main-bg">
+        <div class="main-bg">
+            <div class="main-bg__image">
+                <img src="src/scoreboard.gif">
                 <a class="main-sticker sticker-stad" href="javascript:void(0)">Твой домашний стадион<br>по суперцене</a>
-                <a class="main-sticker sticker-hifi" href="javascript:void(0)">Мощнейшие Hi-Fi<br>трибуны в подарок</a>
-                <a href="javascript:void(0)" class="button button-gold main-bg__button">Выбрать телевизор</a>
+                <a class="main-sticker sticker-hifi" href="javascript:void(0)">Мощнейшее Hi-Fi<br>сопровождение<br>в подарок</a>
             </div>
+            <a href="javascript:void(0)" class="button button-gold main-bg__button">Выбрать телевизор</a>
+        </div>
+        <div class="a_content clearfix">
             <div class="clearfix">
                 <div class="f-head">Где смотреть чемпионат мира по футболу - решать тебе</div>
                 <div class="f-size">
                     <span>Твой размер:</span>
                     <ul class="size-list">
-                        <li tab-id="id75" class="selected">75"</li>
-                        <li tab-id="id65">65"</li>
-                        <li tab-id="id60">60"</li>
-                        <li tab-id="id55">55"</li>
-                        <li tab-id="id50">50"</li>
-                        <li tab-id="id48">48"</li>
-                        <li tab-id="id46">46"</li>
-                        <li tab-id="id40">40"</li>
+                        <li><a class="link" href="javascript:void(0)" onclick="showDisplay('#id75');">75"</a>
+                        <li><a class="link" href="javascript:void(0)" onclick="showDisplay('#id65');">65"</a>
+                        <li><a class="link" href="javascript:void(0)" onclick="showDisplay('#id60');">60"</a>
+                        <li><a class="link" href="javascript:void(0)" onclick="showDisplay('#id55');">55"</a>
+                        <li><a class="link" href="javascript:void(0)" onclick="showDisplay('#id50');">50"</a>
+                        <li><a class="link" href="javascript:void(0)" onclick="showDisplay('#id48');">48"</a>
+                        <li><a class="link" href="javascript:void(0)" onclick="showDisplay('#id46');">46"</a>
+                        <li><a class="link" href="javascript:void(0)" onclick="showDisplay('#id40');">40"</a>
                     </ul>
                 </div>
-                <div id="id75" class="size-area" style="display: block">
-                    <hr class="sinus sinus-gold">
+                <div id="id75" class="size-area">
+                    <div class="sinus-wrap"><div class="sinus sinus-gold"></div></div>
                     <div class="item rel">
                         <div class="item-badge">75"</div>
                         <div class="item-fline clearfix">
                             <img class="item-pic flt-l" src="src/boss_1.jpg" alt=""/>
                             <div class="item-card flt-r">
                                 <div><span class="card-name">Телевизор</span></div>
-                                <div style="margin-bottom: 11px;"><span class="card-model">Samsung H6400</span></div>
+                                <div style="margin-bottom: 11px;"><a href="javascript:void(0)" class="card-model link underline-link">Samsung H6400</a></div>
                                 <div><span class="card-desc">с диагональю 65 дюймов
                                         и изогнутым дисплеем,
                                         обеспечит вам полное погружение
@@ -72,14 +75,14 @@
                             <img class="item-view flt-r" src="src/im_1.jpg"/>
                         </div>
                     </div>
-                    <hr class="sinus sinus-gold">
+                    <div class="sinus-wrap"><div class="sinus"></div></div>
                     <ul class="add-items clearfix list-none">
                         <li class="add-item">
                             <img src="src/sam_2.jpg" alt="">
                             <div class="add-item-desc">
                                 <span>Телевизор</span>
                                 <br>
-                                <span class="add-item-model">Samsung H6400</span>
+                                <a href="javascript:void(0)" class="add-item-model link underline-link">Samsung H6400</a>
                                 <br>
                                 <span class="add-item-price">за 169 990 ⃏</span>
                             </div>
@@ -90,7 +93,7 @@
                             <div class="add-item-desc">
                                 <span>Телевизор</span>
                                 <br>
-                                <span class="add-item-model">Samsung H6400</span>
+                                <a href="javascript:void(0)" class="add-item-model link underline-link ">Samsung H6400</a>
                                 <br>
                                 <span class="add-item-price">за 169 990 ⃏</span>
                             </div>
@@ -101,7 +104,7 @@
                             <div class="add-item-desc">
                                 <span>Телевизор</span>
                                 <br>
-                                <span class="add-item-model">Samsung H6400</span>
+                                <a href="javascript:void(0)" class="add-item-model link underline-link ">Samsung H6400</a>
                                 <br>
                                 <span class="add-item-price">за 169 990 ⃏</span>
                             </div>
@@ -115,17 +118,64 @@
                                 </div>
                             </div>
                         </li>
+
                     </ul>
+                    <ul class="add-items showable-items clearfix list-none">
+                    <li class="add-item">
+                        <img src="src/sam_2.jpg" alt="">
+                        <div class="add-item-desc">
+                            <span>Телевизор</span>
+                            <br>
+                            <a href="javascript:void(0)" class="add-item-model link underline-link">Samsung H6400</a>
+                            <br>
+                            <span class="add-item-price">за 169 990 ⃏</span>
+                        </div>
+                        <a class="button button-sm button-gold">Подробнее</a>
+                    </li>
+                    <li class="add-item">
+                        <img src="src/sam_1.jpg" alt="">
+                        <div class="add-item-desc">
+                            <span>Телевизор</span>
+                            <br>
+                            <a href="javascript:void(0)" class="add-item-model link underline-link ">Samsung H6400</a>
+                            <br>
+                            <span class="add-item-price">за 169 990 ⃏</span>
+                        </div>
+                        <a class="button button-sm button-gold">Подробнее</a>
+                    </li>
+                    <li class="add-item">
+                        <img src="src/sam_2.jpg" alt="">
+                        <div class="add-item-desc">
+                            <span>Телевизор</span>
+                            <br>
+                            <a href="javascript:void(0)" class="add-item-model link underline-link">Samsung H6400</a>
+                            <br>
+                            <span class="add-item-price">за 169 990 ⃏</span>
+                        </div>
+                        <a class="button button-sm button-gold">Подробнее</a>
+                    </li>
+                    <li class="add-item">
+                        <img src="src/sam_1.jpg" alt="">
+                        <div class="add-item-desc">
+                            <span>Телевизор</span>
+                            <br>
+                            <a href="javascript:void(0)" class="add-item-model link underline-link ">Samsung H6400</a>
+                            <br>
+                            <span class="add-item-price">за 169 990 ⃏</span>
+                        </div>
+                        <a class="button button-sm button-gold">Подробнее</a>
+                    </li>
+                </ul>
                 </div>
                 <div id="id65" class="size-area">
-                    <hr class="sinus sinus-gold">
+                    <div class="sinus-wrap"><div class="sinus sinus-gold"></div></div>
                     <div class="item rel">
                         <div class="item-badge">65"</div>
                         <div class="item-fline clearfix">
                             <img class="item-pic flt-l" src="src/boss_1.jpg" alt=""/>
                             <div class="item-card flt-r">
                                 <div><span class="card-name">Телевизор</span></div>
-                                <div style="margin-bottom: 11px;"><span class="card-model">Samsung H6400</span></div>
+                                <div style="margin-bottom: 11px;"><a href="javascript:void(0)" class="card-model link underline-link line-gold-hover">Samsung H6400</a></div>
                                 <div><span class="card-desc">с диагональю 65 дюймов
                                         и изогнутым дисплеем,
                                         обеспечит вам полное погружение
@@ -154,14 +204,14 @@
                             <img class="item-view flt-r" src="src/im_1.jpg"/>
                         </div>
                     </div>
-                    <hr class="sinus sinus-gold">
+                    <div class="sinus"></div>
                     <ul class="add-items clearfix list-none">
                         <li class="add-item">
                             <img src="src/sam_2.jpg" alt="">
                             <div class="add-item-desc">
                                 <span>Телевизор</span>
                                 <br>
-                                <span class="add-item-model">Samsung H6400</span>
+                                <a href="javascript:void(0)" class="add-item-model link underline-link ">Samsung H6400</a>
                                 <br>
                                 <span class="add-item-price">за 169 990 ⃏</span>
                             </div>
@@ -172,7 +222,7 @@
                             <div class="add-item-desc">
                                 <span>Телевизор</span>
                                 <br>
-                                <span class="add-item-model">Samsung H6400</span>
+                                <a href="javascript:void(0)" class="add-item-model link underline-link ">Samsung H6400</a>
                                 <br>
                                 <span class="add-item-price">за 169 990 ⃏</span>
                             </div>
@@ -183,7 +233,7 @@
                             <div class="add-item-desc">
                                 <span>Телевизор</span>
                                 <br>
-                                <span class="add-item-model">Samsung H6400</span>
+                                <a href="javascript:void(0)" class="add-item-model link underline-link ">Samsung H6400</a>
                                 <br>
                                 <span class="add-item-price">за 169 990 ⃏</span>
                             </div>
@@ -200,7 +250,7 @@
                     </ul>
                 </div>
                 <div id="id60" class="size-area">
-                    <hr class="sinus sinus-gold">
+                    <div class="sinus-wrap"><div class="sinus sinus-gold"></div></div>
                     <div class="item rel">
                         <div class="item-badge">60"</div>
                         <div class="item-fline clearfix">
@@ -236,14 +286,14 @@
                             <img class="item-view flt-r" src="src/im_1.jpg"/>
                         </div>
                     </div>
-                    <hr class="sinus sinus-gold">
+                    <div class="sinus"></div>
                     <ul class="add-items clearfix list-none">
                         <li class="add-item">
                             <img src="src/sam_2.jpg" alt="">
                             <div class="add-item-desc">
                                 <span>Телевизор</span>
                                 <br>
-                                <span class="add-item-model">Samsung H6400</span>
+                                <a href="javascript:void(0)" class="add-item-model link underline-link ">Samsung H6400</a>
                                 <br>
                                 <span class="add-item-price">за 169 990 ⃏</span>
                             </div>
@@ -254,7 +304,7 @@
                             <div class="add-item-desc">
                                 <span>Телевизор</span>
                                 <br>
-                                <span class="add-item-model">Samsung H6400</span>
+                                <a href="javascript:void(0)" class="add-item-model link underline-link ">Samsung H6400</a>
                                 <br>
                                 <span class="add-item-price">за 169 990 ⃏</span>
                             </div>
@@ -265,7 +315,7 @@
                             <div class="add-item-desc">
                                 <span>Телевизор</span>
                                 <br>
-                                <span class="add-item-model">Samsung H6400</span>
+                                <a href="javascript:void(0)" class="add-item-model link underline-link ">Samsung H6400</a>
                                 <br>
                                 <span class="add-item-price">за 169 990 ⃏</span>
                             </div>
@@ -282,7 +332,7 @@
                     </ul>
                 </div>
                 <div id="id55" class="size-area">
-                    <hr class="sinus sinus-gold">
+                    <div class="sinus-wrap"><div class="sinus sinus-gold"></div></div>
                     <div class="item rel">
                         <div class="item-badge">55"</div>
                         <div class="item-fline clearfix">
@@ -318,14 +368,14 @@
                             <img class="item-view flt-r" src="src/im_1.jpg"/>
                         </div>
                     </div>
-                    <hr class="sinus sinus-gold">
+                    <div class="sinus"></div>
                     <ul class="add-items clearfix list-none">
                         <li class="add-item">
                             <img src="src/sam_2.jpg" alt="">
                             <div class="add-item-desc">
                                 <span>Телевизор</span>
                                 <br>
-                                <span class="add-item-model">Samsung H6400</span>
+                                <a href="javascript:void(0)" class="add-item-model link underline-link ">Samsung H6400</a>
                                 <br>
                                 <span class="add-item-price">за 169 990 ⃏</span>
                             </div>
@@ -336,7 +386,7 @@
                             <div class="add-item-desc">
                                 <span>Телевизор</span>
                                 <br>
-                                <span class="add-item-model">Samsung H6400</span>
+                                <a href="javascript:void(0)" class="add-item-model link underline-link ">Samsung H6400</a>
                                 <br>
                                 <span class="add-item-price">за 169 990 ⃏</span>
                             </div>
@@ -347,7 +397,7 @@
                             <div class="add-item-desc">
                                 <span>Телевизор</span>
                                 <br>
-                                <span class="add-item-model">Samsung H6400</span>
+                                <a href="javascript:void(0)" class="add-item-model link underline-link ">Samsung H6400</a>
                                 <br>
                                 <span class="add-item-price">за 169 990 ⃏</span>
                             </div>
@@ -364,7 +414,7 @@
                     </ul>
                 </div>
                 <div id="id50" class="size-area">
-                    <hr class="sinus sinus-gold">
+                    <div class="sinus-wrap"><div class="sinus sinus-gold"></div></div>
                     <div class="item rel">
                         <div class="item-badge">50"</div>
                         <div class="item-fline clearfix">
@@ -400,14 +450,14 @@
                             <img class="item-view flt-r" src="src/im_1.jpg"/>
                         </div>
                     </div>
-                    <hr class="sinus sinus-gold">
+                    <div class="sinus"></div>
                     <ul class="add-items clearfix list-none">
                         <li class="add-item">
                             <img src="src/sam_2.jpg" alt="">
                             <div class="add-item-desc">
                                 <span>Телевизор</span>
                                 <br>
-                                <span class="add-item-model">Samsung H6400</span>
+                                <a href="javascript:void(0)" class="add-item-model link underline-link ">Samsung H6400</a>
                                 <br>
                                 <span class="add-item-price">за 169 990 ⃏</span>
                             </div>
@@ -418,7 +468,7 @@
                             <div class="add-item-desc">
                                 <span>Телевизор</span>
                                 <br>
-                                <span class="add-item-model">Samsung H6400</span>
+                                <a href="javascript:void(0)" class="add-item-model link underline-link ">Samsung H6400</a>
                                 <br>
                                 <span class="add-item-price">за 169 990 ⃏</span>
                             </div>
@@ -429,7 +479,7 @@
                             <div class="add-item-desc">
                                 <span>Телевизор</span>
                                 <br>
-                                <span class="add-item-model">Samsung H6400</span>
+                                <a href="javascript:void(0)" class="add-item-model link underline-link ">Samsung H6400</a>
                                 <br>
                                 <span class="add-item-price">за 169 990 ⃏</span>
                             </div>
@@ -446,7 +496,7 @@
                     </ul>
                 </div>
                 <div id="id48" class="size-area">
-                    <hr class="sinus sinus-gold">
+                    <div class="sinus-wrap"><div class="sinus sinus-gold"></div></div>
                     <div class="item rel">
                         <div class="item-badge">48"</div>
                         <div class="item-fline clearfix">
@@ -482,14 +532,14 @@
                             <img class="item-view flt-r" src="src/im_1.jpg"/>
                         </div>
                     </div>
-                    <hr class="sinus sinus-gold">
+                    <div class="sinus"></div>
                     <ul class="add-items clearfix list-none">
                         <li class="add-item">
                             <img src="src/sam_2.jpg" alt="">
                             <div class="add-item-desc">
                                 <span>Телевизор</span>
                                 <br>
-                                <span class="add-item-model">Samsung H6400</span>
+                                <a href="javascript:void(0)" class="add-item-model link underline-link ">Samsung H6400</a>
                                 <br>
                                 <span class="add-item-price">за 169 990 ⃏</span>
                             </div>
@@ -500,7 +550,7 @@
                             <div class="add-item-desc">
                                 <span>Телевизор</span>
                                 <br>
-                                <span class="add-item-model">Samsung H6400</span>
+                                <a href="javascript:void(0)" class="add-item-model link underline-link ">Samsung H6400</a>
                                 <br>
                                 <span class="add-item-price">за 169 990 ⃏</span>
                             </div>
@@ -511,7 +561,7 @@
                             <div class="add-item-desc">
                                 <span>Телевизор</span>
                                 <br>
-                                <span class="add-item-model">Samsung H6400</span>
+                                <a href="javascript:void(0)" class="add-item-model link underline-link ">Samsung H6400</a>
                                 <br>
                                 <span class="add-item-price">за 169 990 ⃏</span>
                             </div>
@@ -528,7 +578,7 @@
                     </ul>
                 </div>
                 <div id="id46" class="size-area">
-                    <hr class="sinus sinus-gold">
+                    <div class="sinus-wrap"><div class="sinus sinus-gold"></div></div>
                     <div class="item rel">
                         <div class="item-badge">46"</div>
                         <div class="item-fline clearfix">
@@ -564,14 +614,14 @@
                             <img class="item-view flt-r" src="src/im_1.jpg"/>
                         </div>
                     </div>
-                    <hr class="sinus sinus-gold">
+                    <div class="sinus"></div>
                     <ul class="add-items clearfix list-none">
                         <li class="add-item">
                             <img src="src/sam_2.jpg" alt="">
                             <div class="add-item-desc">
                                 <span>Телевизор</span>
                                 <br>
-                                <span class="add-item-model">Samsung H6400</span>
+                                <a href="javascript:void(0)" class="add-item-model link underline-link ">Samsung H6400</a>
                                 <br>
                                 <span class="add-item-price">за 169 990 ⃏</span>
                             </div>
@@ -582,7 +632,7 @@
                             <div class="add-item-desc">
                                 <span>Телевизор</span>
                                 <br>
-                                <span class="add-item-model">Samsung H6400</span>
+                                <a href="javascript:void(0)" class="add-item-model link underline-link ">Samsung H6400</a>
                                 <br>
                                 <span class="add-item-price">за 169 990 ⃏</span>
                             </div>
@@ -593,7 +643,7 @@
                             <div class="add-item-desc">
                                 <span>Телевизор</span>
                                 <br>
-                                <span class="add-item-model">Samsung H6400</span>
+                                <a href="javascript:void(0)" class="add-item-model link underline-link ">Samsung H6400</a>
                                 <br>
                                 <span class="add-item-price">за 169 990 ⃏</span>
                             </div>
@@ -610,7 +660,7 @@
                     </ul>
                 </div>
                 <div id="id40" class="size-area">
-                    <hr class="sinus sinus-gold">
+                    <div class="sinus-wrap"><div class="sinus sinus-gold"></div></div>
                     <div class="item rel">
                         <div class="item-badge">40"</div>
                         <div class="item-fline clearfix">
@@ -646,14 +696,14 @@
                             <img class="item-view flt-r" src="src/im_1.jpg"/>
                         </div>
                     </div>
-                    <hr class="sinus sinus-gold">
+                    <div class="sinus"></div>
                     <ul class="add-items clearfix list-none">
                         <li class="add-item">
                             <img src="src/sam_2.jpg" alt="">
                             <div class="add-item-desc">
                                 <span>Телевизор</span>
                                 <br>
-                                <span class="add-item-model">Samsung H6400</span>
+                                <a href="javascript:void(0)" class="add-item-model link underline-link ">Samsung H6400</a>
                                 <br>
                                 <span class="add-item-price">за 169 990 ⃏</span>
                             </div>
@@ -664,7 +714,7 @@
                             <div class="add-item-desc">
                                 <span>Телевизор</span>
                                 <br>
-                                <span class="add-item-model">Samsung H6400</span>
+                                <a href="javascript:void(0)" class="add-item-model link underline-link ">Samsung H6400</a>
                                 <br>
                                 <span class="add-item-price">за 169 990 ⃏</span>
                             </div>
@@ -675,7 +725,7 @@
                             <div class="add-item-desc">
                                 <span>Телевизор</span>
                                 <br>
-                                <span class="add-item-model">Samsung H6400</span>
+                                <a href="javascript:void(0)" class="add-item-model link underline-link ">Samsung H6400</a>
                                 <br>
                                 <span class="add-item-price">за 169 990 ⃏</span>
                             </div>

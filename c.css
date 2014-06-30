@@ -1,3 +1,6 @@
+body {
+    margin: 0;
+}
 .a-football * {
     margin: 0;
     padding: 0;
@@ -41,10 +44,45 @@
 
 .a-football .main-bg {
     display: block;
-    height: 671px;
-    background: url("src/main.jpg") no-repeat center;
     position: relative;
+    background: url("src/main.jpg") no-repeat center;
+    height: 671px;
+    text-align: center;
 }
+.a-football .showable-items {
+    display: none;
+}
+.main-bg__image {
+    width: 960px;
+    height: 671px;
+    position: relative;
+    margin: auto;
+}
+
+.main-bg__image img {
+    position: absolute;
+    left: -250px;
+    top: 0;
+}
+
+.a-football .main-sticker {
+    font-size: 18px;
+    font-style: italic;
+    position: absolute;
+}
+
+.a-football .sticker-stad {
+    top: 14%;
+    text-align: left;
+    right: 0;
+}
+
+.a-football .sticker-hifi {
+    top: 43%;
+    text-align: right;
+    right: 0;
+}
+
 .main-bg__button {
     position: absolute;
     left: 50%;
@@ -233,30 +271,26 @@
     line-height: 0;
     height: 0;
 }
-
-.a-football .main-sticker {
-    font-size: 18px;
-    font-style: italic;
-    position: absolute;
-
+.a-football .sinus-wrap {
+    /*overflow: hidden;*/
 }
-.a-football .sticker-stad {
-    top: 10%;
-    left: 60%;
-}
-.a-football .sticker-hifi {
-    top: 40%;
-    left: 55%;
-}
-
-hr.sinus {
+.a-football .sinus {
     margin: 10px 0;
+    display: block;
+    height: 9px;
+    background: url('src/wave_border.png') 0 -9px;
+}
+.a-football .sinus.sinus-gold {
+    background-position: 0 0;
 }
 
 .a-football .f-head {
     margin: 40px 0 25px;
     font-size: 44px;
     text-align: center;
+}
+.a-football .size-list {
+    display: inline-block;
 }
 .a-football .f-size {
     font-size: 0;
@@ -286,9 +320,6 @@ hr.sinus {
 .a-football .f-size li.selected {
     background-color: #ffc302;
 }
-.a-football .size-area {
-    display: none;
-}
 .a-football .button {
     padding: 0 10px;
     height: 48px;
@@ -301,6 +332,7 @@ hr.sinus {
     cursor: pointer;
     outline: none;
     display: inline-block;
+    box-sizing: border-box;
 }
 
 .a-football .button-gold {
@@ -330,13 +362,14 @@ hr.sinus {
     position: relative;
     text-align: center;
     padding-top: 20px;
+    padding-bottom: 5px;
     /*width: 30%;*/
     /*width: calc((100% - 80px) / 3);*/
     width: 285px;
     overflow: hidden;
 }
 
-.a-football .add-item:not(:last-child){
+.a-football .add-item:not(:nth-child(3n)){
     margin-right: 4%;
     margin-right: calc((100% - 3 * 285px) / 2);
 }
@@ -493,9 +526,15 @@ hr.sinus {
 }
 .a-football .card-model {
     font-size: 24px;
-    border-bottom: 1px solid #ffc302;
+    border-color: #ffc302;
 }
-.a-football .item-card:hover .card-model, .a-football .card__in-present {
+.a-football .add-item-model {
+    border-color: #ffc302;
+}
+.a-football .card-model:hover, .a-football .add-item-model:hover {
+    color: #093;
+}
+.a-football .card__in-present {
     color: #093;
 }
 .a-football .card-plus {
